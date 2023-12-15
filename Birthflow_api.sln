@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Birthflow_api.Api", "Birthflow_api.Api\Birthflow_api.Api.csproj", "{D0684ADB-2026-445A-9BE0-920DC1C1E7F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Birthflow_api.Api", "Birthflow_api.Api\Birthflow_api.Api.csproj", "{D0684ADB-2026-445A-9BE0-920DC1C1E7F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Birthflow_api.Application", "Birthflow_api.Application\Birthflow_api.Application.csproj", "{7F7EE3A3-0AA4-4963-A776-1A040F78F69E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Birthflow_api.Domain", "Birthflow_api.Domain\Birthflow_api.Domain.csproj", "{4549995E-48D2-436F-914D-A29568F8CFB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Birthflow_api.Infrastructure", "Birthflow_api.Infrastructure\Birthflow_api.Infrastructure.csproj", "{A67EE897-34DF-44C9-9C56-02D5B93BAE8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{D0684ADB-2026-445A-9BE0-920DC1C1E7F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0684ADB-2026-445A-9BE0-920DC1C1E7F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0684ADB-2026-445A-9BE0-920DC1C1E7F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F7EE3A3-0AA4-4963-A776-1A040F78F69E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7EE3A3-0AA4-4963-A776-1A040F78F69E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7EE3A3-0AA4-4963-A776-1A040F78F69E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7EE3A3-0AA4-4963-A776-1A040F78F69E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4549995E-48D2-436F-914D-A29568F8CFB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4549995E-48D2-436F-914D-A29568F8CFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4549995E-48D2-436F-914D-A29568F8CFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4549995E-48D2-436F-914D-A29568F8CFB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A67EE897-34DF-44C9-9C56-02D5B93BAE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A67EE897-34DF-44C9-9C56-02D5B93BAE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A67EE897-34DF-44C9-9C56-02D5B93BAE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A67EE897-34DF-44C9-9C56-02D5B93BAE8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
