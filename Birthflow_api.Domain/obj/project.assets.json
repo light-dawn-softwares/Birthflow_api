@@ -1,0 +1,99 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Birthflow_api.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Birthflow_api.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Birthflow_api.Application.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Birthflow_api.Application/1.0.0": {
+      "type": "project",
+      "path": "../Birthflow_api.Application/Birthflow_api.Application.csproj",
+      "msbuildProject": "../Birthflow_api.Application/Birthflow_api.Application.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Birthflow_api.Application >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\russe\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj",
+      "projectName": "Birthflow_api.Domain",
+      "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj",
+      "packagesPath": "C:\\Users\\russe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\russe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj": {
+              "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error al obtener los datos de vulnerabilidad del paquete: Acceso denegado a la ruta de acceso 'C:\\Users\\russe\\AppData\\Local\\NuGet\\v3-cache\\670c1461c29885f9aa22c281d8b7da90845b38e4$ps_api.nuget.org_v3_index.json'."
+    }
+  ]
+}

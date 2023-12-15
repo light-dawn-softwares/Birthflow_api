@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Birthflow_api.Application/1.0.0": {
+        "runtime": {
+          "Birthflow_api.Application.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Birthflow_api.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
