@@ -27,6 +27,14 @@ public partial class MedicalSurveillance
 
     public DateTime Time { get; set; }
 
+    public bool IsDelete { get; set; }
+
+    public DateTime CreateAt { get; set; }
+
+    public DateTime? UpdateAt { get; set; }
+
+    public DateTime? DeleteAt { get; set; }
+
     public virtual Observation? Observation { get; set; }
 
     public virtual Partograph? Partograph { get; set; }

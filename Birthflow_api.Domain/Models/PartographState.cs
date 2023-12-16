@@ -15,5 +15,9 @@ public partial class PartographState
 
     public DateTime LastModification { get; set; }
 
+    public DateTime CreateAt { get; set; }
+
+    public DateTime? UpdateAt { get; set; }
+
     public virtual Partograph Partograph { get; set; } = null!;
 }

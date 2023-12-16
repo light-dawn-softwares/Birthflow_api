@@ -17,5 +17,9 @@ public partial class Configuration
 
     public string? Lenguage { get; set; }
 
+    public DateTime CreateAt { get; set; }
+
+    public DateTime? UpdateAt { get; set; }
+
     public virtual User? User { get; set; }
 }

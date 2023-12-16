@@ -15,6 +15,12 @@ public partial class Partograph
 
     public DateTime Date { get; set; }
 
+    public bool IsDelete { get; set; }
+
+    public DateTime CreateAt { get; set; }
+
+    public DateTime? UpdateAt { get; set; }
+
     public virtual ICollection<BirthNote> BirthNotes { get; set; } = new List<BirthNote>();
 
     public virtual ICollection<CervicalDilation> CervicalDilations { get; set; } = new List<CervicalDilation>();
