@@ -17,6 +17,14 @@ public partial class User
 
     public decimal? PhoneNumber { get; set; }
 
+    public bool IsDelete { get; set; }
+
+    public DateTime CreateAt { get; set; }
+
+    public DateTime? UpdateAt { get; set; }
+
+    public DateTime? DeleteAt { get; set; }
+
     public virtual ICollection<Configuration> Configurations { get; set; } = new List<Configuration>();
 
     public virtual ICollection<Notification> Notifications { get; set; } = new List<Notification>();

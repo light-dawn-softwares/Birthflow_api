@@ -15,5 +15,13 @@ public partial class CervicalDilation
 
     public bool RemOram { get; set; }
 
+    public bool IsDelete { get; set; }
+
+    public DateTime CreateAt { get; set; }
+
+    public DateTime? UpdateAt { get; set; }
+
+    public DateTime? DeleteAt { get; set; }
+
     public virtual Partograph? Partograph { get; set; }
 }

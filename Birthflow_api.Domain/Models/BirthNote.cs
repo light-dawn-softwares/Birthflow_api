@@ -9,7 +9,7 @@ public partial class BirthNote
 
     public string? PartographId { get; set; }
 
-    public string Description { get; set; } = null!;
+    public string? Description { get; set; }
 
     public string Hour { get; set; } = null!;
 
@@ -40,6 +40,10 @@ public partial class BirthNote
     public string HuellaPlantar { get; set; } = null!;
 
     public DateTime Date { get; set; }
+
+    public DateTime CreateAt { get; set; }
+
+    public DateTime? UpdateAt { get; set; }
 
     public virtual Partograph? Partograph { get; set; }
 }

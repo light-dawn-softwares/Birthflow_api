@@ -11,5 +11,13 @@ public partial class Observation
 
     public string Description { get; set; } = null!;
 
+    public bool IsDelete { get; set; }
+
+    public DateTime CreateAt { get; set; }
+
+    public DateTime? UpdateAt { get; set; }
+
+    public DateTime? DeleteAt { get; set; }
+
     public virtual MedicalSurveillance MedicalSurveillance { get; set; } = null!;
 }

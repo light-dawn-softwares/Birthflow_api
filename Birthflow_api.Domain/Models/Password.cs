@@ -9,9 +9,13 @@ public partial class Password
 
     public Guid? UserId { get; set; }
 
-    public byte[]? Password1 { get; set; }
+    public byte[]? PasswordHash { get; set; }
+
+    public byte[]? PasswordSalt { get; set; }
 
     public bool? PassCurrent { get; set; }
+
+    public DateTime CreateAt { get; set; }
 
     public virtual User? User { get; set; }
 }
