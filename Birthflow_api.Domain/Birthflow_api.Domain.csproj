@@ -10,8 +10,4 @@
     <ProjectReference Include="..\Birthflow_api.Application\Birthflow_api.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>

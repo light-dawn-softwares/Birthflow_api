@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XMVAu0kXDO3Q+d6MLw5R1ay3zKmXOCl8YzdxroyLEAvT8W+UnWdYTaOllSupVbdZ01UNBtyRLOdC1v5zMi2mrA==",
+  "dgSpecHash": "f1hjrrAoFxaQlhe8qmeWAPpqsRyTSJ2G4ei+88iWvTftM3qbw5tJ4ToIVNtNX1Cr/JvhY+A//yg9Sx8oMAyyXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error al obtener los datos de vulnerabilidad del paquete: Acceso denegado a la ruta de acceso 'C:\\Users\\russe\\AppData\\Local\\NuGet\\v3-cache\\670c1461c29885f9aa22c281d8b7da90845b38e4$ps_api.nuget.org_v3_index.json'."
-    }
-  ]
+  "logs": []
 }

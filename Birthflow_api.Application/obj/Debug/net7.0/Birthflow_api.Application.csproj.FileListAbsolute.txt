@@ -10,3 +10,15 @@ C:\Users\russe\source\repos\Birthflow_api\Birthflow_api.Application\obj\Debug\ne
 C:\Users\russe\source\repos\Birthflow_api\Birthflow_api.Application\obj\Debug\net7.0\Birthflow_api.Application.pdb
 C:\Users\russe\source\repos\Birthflow_api\Birthflow_api.Application\obj\Debug\net7.0\ref\Birthflow_api.Application.dll
 C:\Users\russe\source\repos\Birthflow_api\Birthflow_api.Application\obj\Debug\net7.0\Birthflow_api.Application.sourcelink.json
+C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Application\bin\Debug\net7.0\Birthflow_api.Application.deps.json
+C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Application\bin\Debug\net7.0\Birthflow_api.Application.dll
+C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Application\bin\Debug\net7.0\Birthflow_api.Application.pdb
+C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Application\obj\Debug\net7.0\Birthflow_api.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Application\obj\Debug\net7.0\Birthflow_api.Application.AssemblyInfoInputs.cache
+C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Application\obj\Debug\net7.0\Birthflow_api.Application.AssemblyInfo.cs
+C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Application\obj\Debug\net7.0\Birthflow_api.Application.csproj.CoreCompileInputs.cache
+C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Application\obj\Debug\net7.0\Birthflow_api.Application.sourcelink.json
+C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Application\obj\Debug\net7.0\Birthflow_api.Application.dll
+C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Application\obj\Debug\net7.0\refint\Birthflow_api.Application.dll
+C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Application\obj\Debug\net7.0\Birthflow_api.Application.pdb
+C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Application\obj\Debug\net7.0\ref\Birthflow_api.Application.dll
