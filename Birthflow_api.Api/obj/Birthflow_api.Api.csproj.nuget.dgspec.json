@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\Birthflow_api.Api.csproj": {}
+    "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\Birthflow_api.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\Birthflow_api.Api.csproj": {
+    "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\Birthflow_api.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\Birthflow_api.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\Birthflow_api.Api.csproj",
         "projectName": "Birthflow_api.Api",
-        "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\Birthflow_api.Api.csproj",
-        "packagesPath": "C:\\Users\\russe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\obj\\",
+        "projectPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\Birthflow_api.Api.csproj",
+        "packagesPath": "C:\\Users\\Russell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\russe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Russell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,14 +28,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj": {
-                "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj"
+              "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj": {
+                "projectPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj"
               },
-              "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj": {
-                "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj"
+              "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj": {
+                "projectPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj"
               },
-              "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\Birthflow_api.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\Birthflow_api.Infrastructure.csproj"
+              "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\Birthflow_api.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\Birthflow_api.Infrastructure.csproj"
               }
             }
           }
@@ -88,17 +88,17 @@
         }
       }
     },
-    "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj": {
+    "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj",
         "projectName": "Birthflow_api.Application",
-        "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj",
-        "packagesPath": "C:\\Users\\russe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\obj\\",
+        "projectPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj",
+        "packagesPath": "C:\\Users\\Russell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\russe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Russell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -143,17 +143,17 @@
         }
       }
     },
-    "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj": {
+    "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj",
         "projectName": "Birthflow_api.Domain",
-        "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj",
-        "packagesPath": "C:\\Users\\russe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj",
+        "packagesPath": "C:\\Users\\Russell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\russe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Russell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -167,8 +167,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj": {
-                "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj"
+              "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj": {
+                "projectPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj"
               }
             }
           }
@@ -202,17 +202,17 @@
         }
       }
     },
-    "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\Birthflow_api.Infrastructure.csproj": {
+    "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\Birthflow_api.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\Birthflow_api.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\Birthflow_api.Infrastructure.csproj",
         "projectName": "Birthflow_api.Infrastructure",
-        "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\Birthflow_api.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\russe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\Birthflow_api.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Russell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\russe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Russell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -226,8 +226,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj": {
-                "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj"
+              "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj": {
+                "projectPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj"
               }
             }
           }

@@ -3676,19 +3676,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\russe\\.nuget\\packages\\": {}
+    "C:\\Users\\Russell\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\Birthflow_api.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\Birthflow_api.Api.csproj",
       "projectName": "Birthflow_api.Api",
-      "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\Birthflow_api.Api.csproj",
-      "packagesPath": "C:\\Users\\russe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\obj\\",
+      "projectPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\Birthflow_api.Api.csproj",
+      "packagesPath": "C:\\Users\\Russell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\russe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Russell\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3702,14 +3702,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj": {
-              "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj"
+            "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj": {
+              "projectPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj"
             },
-            "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj": {
-              "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj"
+            "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj": {
+              "projectPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Domain\\Birthflow_api.Domain.csproj"
             },
-            "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\Birthflow_api.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\russe\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\Birthflow_api.Infrastructure.csproj"
+            "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\Birthflow_api.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Infrastructure\\Birthflow_api.Infrastructure.csproj"
             }
           }
         }
@@ -3761,13 +3761,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error al obtener los datos de vulnerabilidad del paquete: Acceso denegado a la ruta de acceso 'C:\\Users\\russe\\AppData\\Local\\NuGet\\v3-cache\\670c1461c29885f9aa22c281d8b7da90845b38e4$ps_api.nuget.org_v3_index.json'."
-    }
-  ]
+  }
 }
