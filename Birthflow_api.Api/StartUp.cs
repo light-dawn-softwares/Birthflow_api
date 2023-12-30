@@ -1,4 +1,8 @@
-﻿using Birthflow_api.Infrastructure;
+﻿using Birthflow_api.Application.Interfaces;
+using Birthflow_api.Application.Services;
+using Birthflow_api.Domain.Interfaces;
+using Birthflow_api.Infrastructure;
+using Birthflow_api.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Text;
@@ -19,13 +23,13 @@ namespace Birthflow_api.Api
         {
             services.AddDbContext<BirthflowDbContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("ConnectionIntranetSQL"));
+                options.UseSqlServer(Configuration.GetConnectionString("ConnectionLocalSQL"));
             });
-         
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Birthflow_api.Api", Version = "Free", Description = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "BirthFlow.Api", Version = "Free", Description = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") });
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
@@ -76,10 +80,11 @@ namespace Birthflow_api.Api
 
             }
 
+
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Birthflow_api.Api v1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Alfie.Api v1");
                 c.RoutePrefix = string.Empty;
             });
             app.UseHttpsRedirection();
@@ -94,8 +99,9 @@ namespace Birthflow_api.Api
             });
         }
         private void RegisterServices(IServiceCollection services)
-        {
-          
+        { 
+            services.AddScoped<PartographService>();
+            services.AddScoped<PartographRepository>();
 
         }
     }

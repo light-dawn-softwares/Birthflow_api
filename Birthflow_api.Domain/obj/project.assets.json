@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
-      "Birthflow_api.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/Birthflow_api.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Birthflow_api.Application.dll": {}
-        }
-      }
-    }
+    "net7.0": {}
   },
-  "libraries": {
-    "Birthflow_api.Application/1.0.0": {
-      "type": "project",
-      "path": "../Birthflow_api.Application/Birthflow_api.Application.csproj",
-      "msbuildProject": "../Birthflow_api.Application/Birthflow_api.Application.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net7.0": [
-      "Birthflow_api.Application >= 1.0.0"
-    ]
+    "net7.0": []
   },
   "packageFolders": {
     "C:\\Users\\Russell\\.nuget\\packages\\": {}
@@ -52,11 +33,7 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {
-            "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj": {
-              "projectPath": "C:\\Users\\Russell\\source\\repos\\Birthflow_api\\Birthflow_api.Application\\Birthflow_api.Application.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

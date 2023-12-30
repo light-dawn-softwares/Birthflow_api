@@ -718,14 +718,15 @@
         }
       },
       "Birthflow_api.Application/1.0.0": {
+        "dependencies": {
+          "Birthflow_api.Domain": "1.0.0",
+          "Birthflow_api.Infrastructure": "1.0.0"
+        },
         "runtime": {
           "Birthflow_api.Application.dll": {}
         }
       },
       "Birthflow_api.Domain/1.0.0": {
-        "dependencies": {
-          "Birthflow_api.Application": "1.0.0"
-        },
         "runtime": {
           "Birthflow_api.Domain.dll": {}
         }

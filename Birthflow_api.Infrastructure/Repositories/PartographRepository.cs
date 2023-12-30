@@ -8,21 +8,23 @@ using System.Threading.Tasks;
 
 namespace Birthflow_api.Infrastructure.Repositories
 {
-    internal class PartographRepository : IPartographRepository
+    public class PartographRepository : IPartographRepository
     {
         private readonly BirthflowDbContext _context;
 
-        PartographRepository(BirthflowDbContext _context) => this._context = _context;
+        public PartographRepository(BirthflowDbContext context) {
+            _context = context ?? throw new ArgumentNullException(nameof(context));
+        }
   
         public void create(Partograph partograph, WorkTime workTime)
         {
             try
             {
-                _context.Add(partograph);
+                /*_context.Add(partograph);
                 _context.SaveChanges();
 
                 _context.Add(workTime);
-                _context.SaveChanges();
+                _context.SaveChanges();*/
 
             }
             catch (Exception)
@@ -39,7 +41,14 @@ namespace Birthflow_api.Infrastructure.Repositories
 
         public IEnumerable<Partograph> findAll(Guid UserId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Partographs.Where(p => p.UserId == UserId).ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void update(Partograph partograph)

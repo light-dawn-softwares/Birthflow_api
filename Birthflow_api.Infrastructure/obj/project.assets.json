@@ -1176,22 +1176,9 @@
           }
         }
       },
-      "Birthflow_api.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/Birthflow_api.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Birthflow_api.Application.dll": {}
-        }
-      },
       "Birthflow_api.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Birthflow_api.Application": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/Birthflow_api.Domain.dll": {}
         },
@@ -3212,11 +3199,6 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "Birthflow_api.Application/1.0.0": {
-      "type": "project",
-      "path": "../Birthflow_api.Application/Birthflow_api.Application.csproj",
-      "msbuildProject": "../Birthflow_api.Application/Birthflow_api.Application.csproj"
     },
     "Birthflow_api.Domain/1.0.0": {
       "type": "project",

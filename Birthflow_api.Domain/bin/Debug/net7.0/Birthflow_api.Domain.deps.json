@@ -7,27 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "Birthflow_api.Domain/1.0.0": {
-        "dependencies": {
-          "Birthflow_api.Application": "1.0.0"
-        },
         "runtime": {
           "Birthflow_api.Domain.dll": {}
-        }
-      },
-      "Birthflow_api.Application/1.0.0": {
-        "runtime": {
-          "Birthflow_api.Application.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Birthflow_api.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Birthflow_api.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
