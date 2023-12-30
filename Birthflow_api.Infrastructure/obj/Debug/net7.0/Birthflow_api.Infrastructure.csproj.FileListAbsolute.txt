@@ -22,10 +22,8 @@ C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Infrastructure\bin\Deb
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Infrastructure\bin\Debug\net7.0\Birthflow_api.Infrastructure.runtimeconfig.json
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Infrastructure\bin\Debug\net7.0\Birthflow_api.Infrastructure.dll
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Infrastructure\bin\Debug\net7.0\Birthflow_api.Infrastructure.pdb
-C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Infrastructure\bin\Debug\net7.0\Birthflow_api.Application.dll
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Infrastructure\bin\Debug\net7.0\Birthflow_api.Domain.dll
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Infrastructure\bin\Debug\net7.0\Birthflow_api.Domain.pdb
-C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Infrastructure\bin\Debug\net7.0\Birthflow_api.Application.pdb
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Infrastructure\obj\Debug\net7.0\Birthflow_api.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Infrastructure\obj\Debug\net7.0\Birthflow_api.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Infrastructure\obj\Debug\net7.0\Birthflow_api.Infrastructure.AssemblyInfoInputs.cache

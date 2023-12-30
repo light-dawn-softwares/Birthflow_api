@@ -1273,6 +1273,10 @@
       "Birthflow_api.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Birthflow_api.Domain": "1.0.0",
+          "Birthflow_api.Infrastructure": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Birthflow_api.Application.dll": {}
         },
@@ -1283,9 +1287,6 @@
       "Birthflow_api.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Birthflow_api.Application": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/Birthflow_api.Domain.dll": {}
         },

@@ -17,15 +17,11 @@ C:\Users\russe\source\repos\Birthflow_api\Birthflow_api.Domain\obj\Debug\net7.0\
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\bin\Debug\net7.0\Birthflow_api.Domain.deps.json
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\bin\Debug\net7.0\Birthflow_api.Domain.dll
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\bin\Debug\net7.0\Birthflow_api.Domain.pdb
-C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\bin\Debug\net7.0\Birthflow_api.Application.dll
-C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\bin\Debug\net7.0\Birthflow_api.Application.pdb
-C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\obj\Debug\net7.0\Birthflow_api.Domain.csproj.AssemblyReference.cache
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\obj\Debug\net7.0\Birthflow_api.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\obj\Debug\net7.0\Birthflow_api.Domain.AssemblyInfoInputs.cache
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\obj\Debug\net7.0\Birthflow_api.Domain.AssemblyInfo.cs
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\obj\Debug\net7.0\Birthflow_api.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\obj\Debug\net7.0\Birthflow_api.Domain.sourcelink.json
-C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\obj\Debug\net7.0\Birthflow_api.Domain.csproj.CopyComplete
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\obj\Debug\net7.0\Birthflow_api.Domain.dll
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\obj\Debug\net7.0\refint\Birthflow_api.Domain.dll
 C:\Users\Russell\source\repos\Birthflow_api\Birthflow_api.Domain\obj\Debug\net7.0\Birthflow_api.Domain.pdb
