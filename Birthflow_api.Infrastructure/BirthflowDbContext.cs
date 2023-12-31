@@ -444,7 +444,7 @@ public partial class BirthflowDbContext : DbContext
             entity.Property(e => e.LastName)
                 .HasMaxLength(50)
                 .IsUnicode(false);
-            entity.Property(e => e.PhoneNumber).HasColumnType("decimal(8, 2)");
+            entity.Property(e => e.PhoneNumber).HasColumnType("decimal(8, 0)");
             entity.Property(e => e.UpdateAt).HasColumnType("datetime");
             entity.Property(e => e.UserName)
                 .HasMaxLength(50)
