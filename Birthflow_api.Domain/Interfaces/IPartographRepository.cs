@@ -13,7 +13,9 @@ namespace Birthflow_api.Domain.Interfaces
 
         public void update(Partograph partograph);
 
-        public void delete(string PartographId);
+        public void delete(string partographId);
+
+        public Partograph findById(string partographId);
 
         public IEnumerable<Partograph> findAll(Guid UserId);
     }

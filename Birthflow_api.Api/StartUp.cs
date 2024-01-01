@@ -57,6 +57,11 @@ namespace Birthflow_api.Api
 
 
             });
+            services.AddControllers()
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+                });
             services.AddCors(options =>
             {
                 options.AddPolicy("newPolicy", app =>
