@@ -20,12 +20,11 @@ namespace Birthflow_api.Application.Services
             _partographRepository = partographRepository;
         }
 
-        public List<Partograph> GetAll(string UserId)
+        public List<Partograph> GetAll(Guid userId)
         {
             try
             {
-                Guid userID = Guid.Parse(UserId);
-                var partographs = _partographRepository.findAll(userID);
+                var partographs = _partographRepository.findAll(userId);
 
                 return partographs.ToList();
             }
@@ -35,7 +34,7 @@ namespace Birthflow_api.Application.Services
             } 
         }
 
-        public Partograph create(PartographDto partographDto)
+        public Partograph create(PartographCreateDto partographDto)
         {
             try
             {
@@ -66,6 +65,53 @@ namespace Birthflow_api.Application.Services
                 throw;
             }
           
+        }
+
+        public Partograph update(PartographDto partographDto)
+        {
+            try
+            { 
+                var partographEntity = new Partograph
+                {
+                    PartographId = partographDto.PartographId,
+                    Name = partographDto.Name,
+                    RecordNumber = partographDto.RecordNumber,
+                    Date = partographDto.Date
+                };
+            
+                _partographRepository.update(partographEntity);
+
+                return partographEntity;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public void delete(string partographId)
+        {
+            try
+            {
+                _partographRepository.delete(partographId);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public Partograph findById(string partographId)
+        {
+            try
+            {
+               return _partographRepository.findById(partographId);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }   

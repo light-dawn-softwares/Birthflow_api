@@ -1,5 +1,7 @@
 ﻿using Birthflow_api.Domain.Interfaces;
+using Birthflow_api.Infrastructure.Helper;
 using Birthflow_api.Infrastructure.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,11 +22,30 @@ namespace Birthflow_api.Infrastructure.Repositories
         {
             try
             {
-                /*_context.Add(partograph);
+                partograph.PartographId = IdCreator.CreateUniqueId(partograph.Name, DateTime.Now);
+                partograph.IsDelete = false;
+                partograph.UpdateAt = null;
+
+                _context.Add(partograph);
                 _context.SaveChanges();
 
+                workTime.PartographId = partograph.PartographId;
+                workTime.CreateAt = DateTime.Now;
+                workTime.UpdateAt = null;
+
                 _context.Add(workTime);
-                _context.SaveChanges();*/
+                _context.SaveChanges();
+
+                PartographState partographState = new PartographState { 
+                    PartographId = partograph.PartographId,
+                    Archived  = false,
+                    Silenced = false,
+                    Permanent = false,
+                    UpdateAt = null,
+                };
+
+                _context.Add(partographState);
+                _context.SaveChanges();
 
             }
             catch (Exception)
@@ -34,16 +55,48 @@ namespace Birthflow_api.Infrastructure.Repositories
             }
         }
 
-        public void delete(string PartographId)
+        public void delete(string partographId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var partograph = _context.Partographs.Find(partographId);
+
+                partograph!.IsDelete = true;
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public IEnumerable<Partograph> findAll(Guid UserId)
         {
             try
             {
-                return _context.Partographs.Where(p => p.UserId == UserId).ToList();
+                return _context.Partographs.
+                    Include(p => p.WorkTime).
+                    Include(p => p.PartographState).
+                    Where(p => p.UserId == UserId).
+                    Where(p => p.IsDelete == false).ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public Partograph findById(string partographId)
+        {
+            try
+            {
+
+                return _context.Partographs.
+                    Include(p => p.WorkTime).
+                    Include(p => p.PartographState).
+                    FirstOrDefault(p => p.PartographId == partographId && !p.IsDelete)!;
+
             }
             catch (Exception)
             {
@@ -53,7 +106,23 @@ namespace Birthflow_api.Infrastructure.Repositories
 
         public void update(Partograph partograph)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var existsPartograph = _context.Partographs.Find(partograph.PartographId);
+
+                if(existsPartograph != null)
+                {
+                    existsPartograph.RecordNumber = partograph.RecordNumber;
+                    existsPartograph.Name = partograph.Name;
+                    existsPartograph.Date = partograph.Date;
+                    existsPartograph.UpdateAt = DateTime.Now;
+                    _context.SaveChanges();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

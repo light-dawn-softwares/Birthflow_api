@@ -10,7 +10,11 @@ namespace Birthflow_api.Application.Interfaces
 {
     public interface IPartographService
     {
-        public List<Partograph> GetAll(string UserId);
-        public Partograph create(PartographDto partographDto);
+        public List<Partograph> GetAll(Guid userId);
+        public Partograph create(PartographCreateDto partographDto);
+        public Partograph update(PartographDto partographDto);
+        public void delete(string partographId);
+        public Partograph findById(string partographId);
+
     }
 }
