@@ -11,10 +11,12 @@ namespace Birthflow_api.Api.Controllers
     public class PartographController : ControllerBase
     {
         private readonly PartographService _partographService;
+        private readonly WorkTimeService _workTimeService;
 
-        public PartographController(PartographService partographService)
+        public PartographController(PartographService partographService, WorkTimeService workTimeService)
         {
             _partographService = partographService;
+            _workTimeService = workTimeService;
         }
 
 
@@ -93,6 +95,44 @@ namespace Birthflow_api.Api.Controllers
                 _partographService.delete(partographId);
 
                 return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Error: {ex.Message}");
+            }
+        }
+
+        [HttpGet("worktime/{partographId}")]
+        public IActionResult FindWorkTime(string partographId)
+        {
+            try
+            {
+                var partograph = _workTimeService.FindById(partographId);
+
+                if (partograph == null)
+                    return NotFound();
+
+                return Ok(partograph);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Error: {ex.Message}");
+            }
+        }
+
+        [HttpPut("worktime/{partographId}")]
+        public IActionResult UpdateWorkTime(string partographId, [FromBody] WorkTimeDto workTimeDto)
+        {
+            try
+            {
+                var existing = _workTimeService.FindById(partographId);
+
+                if (existing == null)
+                    return NotFound();
+
+                _workTimeService.Update(workTimeDto);
+
+                return CreatedAtAction(nameof(FindWorkTime), new { partographId = workTimeDto.PartographId }, workTimeDto);
             }
             catch (Exception ex)
             {

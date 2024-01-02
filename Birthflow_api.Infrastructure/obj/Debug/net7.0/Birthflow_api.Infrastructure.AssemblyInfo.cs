@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Birthflow_api.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e5161aa9a5f803ddea244fad81b0d4bd79bdc5d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f68df6314358b806a39efdaca134c8e69ec10b09")]
 [assembly: System.Reflection.AssemblyProductAttribute("Birthflow_api.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Birthflow_api.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
