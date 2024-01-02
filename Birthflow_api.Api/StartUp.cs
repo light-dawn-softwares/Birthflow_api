@@ -109,6 +109,8 @@ namespace Birthflow_api.Api
             services.AddScoped<PartographRepository>();
             services.AddScoped<UserService>();
             services.AddScoped<UserRepository>();
+            services.AddScoped<WorkTimeService>();
+            services.AddScoped<WorkTimeRepository>();
 
         }
     }
