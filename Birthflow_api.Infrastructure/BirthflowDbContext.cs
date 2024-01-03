@@ -142,7 +142,7 @@ public partial class BirthflowDbContext : DbContext
                 .HasColumnName("PartographID");
             entity.Property(e => e.RemOram).HasColumnName("RemORam");
             entity.Property(e => e.UpdateAt).HasColumnType("datetime");
-            entity.Property(e => e.Value).HasColumnType("decimal(2, 2)");
+            entity.Property(e => e.Value).HasColumnType("decimal(11, 2)");
 
             entity.HasOne(d => d.Partograph).WithMany(p => p.CervicalDilations)
                 .HasForeignKey(d => d.PartographId)
