@@ -2,6 +2,7 @@
 using Birthflow_api.Application.Interfaces;
 using Birthflow_api.Application.Services;
 using Birthflow_api.Infrastructure.Models;
+using Birthflow_api.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Birthflow_api.Api.Controllers
@@ -12,14 +13,16 @@ namespace Birthflow_api.Api.Controllers
     {
         private readonly PartographService _partographService;
         private readonly WorkTimeService _workTimeService;
+        private readonly CervicalDilationService _cervicalDilationService;
 
-        public PartographController(PartographService partographService, WorkTimeService workTimeService)
+        public PartographController(PartographService partographService, WorkTimeService workTimeService, CervicalDilationService cervicalDilationService)
         {
             _partographService = partographService;
             _workTimeService = workTimeService;
+            _cervicalDilationService = cervicalDilationService;
         }
 
-
+        #region General
         [HttpGet]
         [Route("GetPartographs")]
         public IActionResult GetPartographs(Guid UserId)
@@ -35,7 +38,7 @@ namespace Birthflow_api.Api.Controllers
             {
                 _partographService.create(partographDto);
                 return NoContent();
-              
+
             }
             catch (Exception ex)
             {
@@ -69,12 +72,12 @@ namespace Birthflow_api.Api.Controllers
         {
             try
             {
-                var partograph =_partographService.findById(partographId);
-                
+                var partograph = _partographService.findById(partographId);
+
                 if (partograph == null)
                     return NotFound();
 
-                return Ok(partograph);    
+                return Ok(partograph);
             }
             catch (Exception ex)
             {
@@ -102,6 +105,9 @@ namespace Birthflow_api.Api.Controllers
             }
         }
 
+        #endregion
+
+        #region WorkTime
         [HttpGet("worktime/{partographId}")]
         public IActionResult FindWorkTime(string partographId)
         {
@@ -137,6 +143,70 @@ namespace Birthflow_api.Api.Controllers
             catch (Exception ex)
             {
                 return BadRequest($"Error: {ex.Message}");
+            }
+        }
+
+        #endregion
+
+        [HttpGet("cervicalDilation/{partographId}")]
+        public IActionResult Get(string partographId)
+        {
+            try
+            {
+                var result = _cervicalDilationService.GetByPartograph(partographId);
+                return Ok(result);
+            }
+            catch (Exception)
+            {
+                    
+                throw;
+            }
+        }
+
+        [HttpPost("cervicalDilation/{partographId}")]
+        public IActionResult Create(string partographId, [FromBody] CervicalDilationDto cervicalDilationDto)
+        {
+            try
+            {
+                _cervicalDilationService.Create(cervicalDilationDto);
+                return NoContent();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+
+        [HttpPut("cervicalDilation/{cervicalDilationId}")]
+        public IActionResult Update(int cervicalDilationId, [FromBody] CervicalDilationDto cervicalDilationDto)
+        {
+            try
+            {
+                _cervicalDilationService.Update(cervicalDilationDto);
+                return NoContent();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+
+        [HttpDelete("cervicalDilation/{id}")]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                _cervicalDilationService.Delete(id);
+                return NoContent();
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
     }
