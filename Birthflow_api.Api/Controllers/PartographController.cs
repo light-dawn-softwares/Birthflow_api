@@ -14,12 +14,15 @@ namespace Birthflow_api.Api.Controllers
         private readonly PartographService _partographService;
         private readonly WorkTimeService _workTimeService;
         private readonly CervicalDilationService _cervicalDilationService;
+        private readonly MedicalSurveillanceService _medicalSurveillanceService;
 
-        public PartographController(PartographService partographService, WorkTimeService workTimeService, CervicalDilationService cervicalDilationService)
+        public PartographController(PartographService partographService, WorkTimeService workTimeService, 
+            CervicalDilationService cervicalDilationService, MedicalSurveillanceService medicalSurveillanceService)
         {
             _partographService = partographService;
             _workTimeService = workTimeService;
             _cervicalDilationService = cervicalDilationService;
+            _medicalSurveillanceService = medicalSurveillanceService;
         }
 
         #region General
@@ -209,5 +212,88 @@ namespace Birthflow_api.Api.Controllers
                 throw;
             }
         }
+
+        #region MedicalSUrveillance 
+
+        [HttpGet("MedicalSurveillance/{partographId}")]
+        public IActionResult GetByPartographId(string partographId)
+        {
+            try
+            {
+                var result = _medicalSurveillanceService.GetByPartographId(partographId);
+                return Ok(result);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpGet("MedicalSurveillance/item/{medicalSurveillanceId}")]
+        public IActionResult GetMedicalSurveillanceById(int medicalSurveillanceId)
+        {
+            try
+            {
+                var result =_medicalSurveillanceService.GetMedicalSurveillanceById(medicalSurveillanceId);
+                return Ok(result);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpPost("MedicalSurveillance/")]
+        public IActionResult CreateMedicalSurveillance([FromBody] MedicalSurveillanceDto medicalSurveillanceDto)
+        {
+            try
+            {
+                _medicalSurveillanceService.Create(medicalSurveillanceDto);
+                return NoContent();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpPut("MedicalSurveillance/{medicalSurveillanceId}")]
+        public IActionResult UpdateMedicalSurveillance(int medicalSurveillanceId, [FromBody] MedicalSurveillanceDto medicalSurveillanceDto )
+        {
+            try
+            {
+                var result = _medicalSurveillanceService.GetMedicalSurveillanceById(medicalSurveillanceId );
+                
+                if (result == null)
+                    return NotFound();
+
+                _medicalSurveillanceService.Update(medicalSurveillanceDto);
+                return CreatedAtAction(nameof(GetMedicalSurveillanceById), new { medicalSurveillanceId = medicalSurveillanceDto.MedicalSurveillanceId }, medicalSurveillanceDto);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpDelete("MedicalSurveillance/{id}")]
+        public IActionResult DeleteMedicalSurveillace(int id)
+        {
+            try
+            {
+                _medicalSurveillanceService.Delete(id);
+                return NoContent();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        #endregion
     }
 }

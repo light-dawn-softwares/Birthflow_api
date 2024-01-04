@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Birthflow_api.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b48ac7462faedf24518a963412129f7b6e4efe0b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80e817c763cf49f35eb4f21f23b05daa1b2a19c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Birthflow_api.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Birthflow_api.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
