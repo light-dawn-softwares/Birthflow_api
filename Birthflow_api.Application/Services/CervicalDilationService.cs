@@ -78,6 +78,8 @@ namespace Birthflow_api.Application.Services
                     RemOram = cervicalDilationDto.RemOram,
                     Hour = cervicalDilationDto.Hour,
                 };
+
+                _repository.Update(cervicalDilation);
             }
             catch (Exception)
             {

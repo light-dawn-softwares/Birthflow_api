@@ -89,7 +89,7 @@ namespace Birthflow_api.Api
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Alfie.Api v1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "BirthFlow.Api");
                 c.RoutePrefix = string.Empty;
             });
             app.UseHttpsRedirection();
@@ -113,6 +113,8 @@ namespace Birthflow_api.Api
             services.AddScoped<WorkTimeRepository>();
             services.AddScoped<CervicalDilationService>();
             services.AddScoped<CervicalDilationRepository>();
+            services.AddScoped<MedicalSurveillanceService>();
+            services.AddScoped<MedicalSurveillanceRepository>();
 
         }
     }
