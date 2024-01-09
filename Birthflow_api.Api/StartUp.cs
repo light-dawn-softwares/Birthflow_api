@@ -115,7 +115,8 @@ namespace Birthflow_api.Api
             services.AddScoped<CervicalDilationRepository>();
             services.AddScoped<MedicalSurveillanceService>();
             services.AddScoped<MedicalSurveillanceRepository>();
-
+            services.AddScoped<VppService>();
+            services.AddScoped<VppRepository>();
         }
     }
 
