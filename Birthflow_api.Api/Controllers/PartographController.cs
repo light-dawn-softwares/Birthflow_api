@@ -15,14 +15,16 @@ namespace Birthflow_api.Api.Controllers
         private readonly WorkTimeService _workTimeService;
         private readonly CervicalDilationService _cervicalDilationService;
         private readonly MedicalSurveillanceService _medicalSurveillanceService;
+        private readonly VppService _vppService;
 
         public PartographController(PartographService partographService, WorkTimeService workTimeService, 
-            CervicalDilationService cervicalDilationService, MedicalSurveillanceService medicalSurveillanceService)
+            CervicalDilationService cervicalDilationService, MedicalSurveillanceService medicalSurveillanceService, VppService vppService)
         {
             _partographService = partographService;
             _workTimeService = workTimeService;
             _cervicalDilationService = cervicalDilationService;
             _medicalSurveillanceService = medicalSurveillanceService;
+            _vppService = vppService;
         }
 
         #region General
@@ -294,6 +296,91 @@ namespace Birthflow_api.Api.Controllers
                 throw;
             }
         }
+        #endregion
+
+        #region Vpp
+
+        [HttpGet("Vpp/{partographId}")]
+        public IActionResult VppGetByPartographId(string partographId)
+        {
+            try
+            {
+                var result = _vppService.GetVppsByPartograph(partographId);
+                return Ok(result);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpGet("Vpp/item/{vvpId}")]
+        public IActionResult GetVppById(int vvpId)
+        {
+            try
+            {
+                var result = _vppService.GetVppById(vvpId);
+                return Ok(result);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+
+        [HttpPost("Vvp/")]
+        public IActionResult CreateVpp([FromBody] VppDto vppDto)
+        {
+            try
+            {
+                _vppService.Create(vppDto);
+                return NoContent();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpPut("MedicalSurveillance/{vppId}")]
+        public IActionResult UpdateVpp(int vppId, [FromBody] VppDto vppDto)
+        {
+            try
+            {
+                var result = _vppService.GetVppById(vppId);
+
+                if (result == null)
+                    return NotFound();
+
+                _vppService.Update(vppDto);
+                return CreatedAtAction(nameof(GetVppById), new { vppId = vppDto.VppId }, vppDto);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpDelete("Vpp/{id}")]
+        public IActionResult DeleteVpp(int id)
+        {
+            try
+            {
+                _vppService.Delete(id);
+                return NoContent();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         #endregion
     }
 }
